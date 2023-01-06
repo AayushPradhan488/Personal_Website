@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('index', views.index, name='index'),
+    path('', views.index, name='index'),
     path('errorpage', views.error, name='error'),
     #path('errorpage2', views.error2, name='error2'),
     path('landing', views.landing, name='landing'),
@@ -14,4 +14,5 @@ urlpatterns = [
     path('InvoManager', views.InvoManager, name='InvoManager'),
     path('Simulation', views.Simulation, name='Simulation'),
     path('SudokuSolver', views.SudokuSolver, name='SudokuSolver'),
+    path('AstroRegister', views.AstroRegister, name='AstroRegister'),
 ]

@@ -10,7 +10,7 @@ def index(request):
 def error_404_view(request, exception):
     # we add the path to the the 404.html file
     # here. The name of our HTML file is 404.html
-    return render(request, 'html5up-forty/errorpage2.html')
+    return render(request, 'html5up-forty/errorpage.html')
 
 def error(request):
     template = loader.get_template('html5up-forty/errorpage.html')
@@ -50,4 +50,8 @@ def Simulation(request):
 
 def SudokuSolver(request):
     template = loader.get_template('html5up-forty/SudokuSolver.html')
+    return HttpResponse(template.render())
+
+def AstroRegister(request):
+    template = loader.get_template('html5up-forty/AstroRegister.html')
     return HttpResponse(template.render())
