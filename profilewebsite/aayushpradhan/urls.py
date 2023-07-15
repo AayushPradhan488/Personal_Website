@@ -15,4 +15,5 @@ urlpatterns = [
     path('Simulation', views.Simulation, name='Simulation'),
     path('SudokuSolver', views.SudokuSolver, name='SudokuSolver'),
     path('AstroRegister', views.AstroRegister, name='AstroRegister'),
+    path('TelescopeAutomation', views.TelescopeAutomation, name='TelescopeAutomation'),
 ]

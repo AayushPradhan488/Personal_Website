@@ -55,3 +55,7 @@ def SudokuSolver(request):
 def AstroRegister(request):
     template = loader.get_template('html5up-forty/AstroRegister.html')
     return HttpResponse(template.render())
+
+def TelescopeAutomation(request):
+    template = loader.get_template('html5up-forty/TelescopeAutomation.html')
+    return HttpResponse(template.render())
