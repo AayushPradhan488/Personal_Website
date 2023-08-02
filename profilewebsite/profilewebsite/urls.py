@@ -17,7 +17,9 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include('aayushpradhan.urls')),
+    path('', include('publicsite.urls')),
+    path('dev/',include('aayushpradhan.urls')),
+    path('dev/WeatherMonitor/',include('weathermonitor.urls')),
     path('admin/', admin.site.urls),
 ]
 handler404 = 'aayushpradhan.views.error_404_view'

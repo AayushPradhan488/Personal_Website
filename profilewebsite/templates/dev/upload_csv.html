@@ -1,0 +1,13 @@
+<h2>Upload a CSV file</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="csv_file"> 
+    <button type="submit">Upload</button>
+</form>
+{% if rows and columns %}
+<div>
+    <h3>Results:</h3>
+    <p>Number of rows: {{ rows }}</p>
+    <p>Number of columns: {{ columns }}</p>
+</div>
+{% endif %}

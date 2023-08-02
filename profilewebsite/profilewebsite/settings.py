@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'aayushpradhan.apps.AayushpradhanConfig'
+    'aayushpradhan',
+    'publicsite',
+    'weathermonitor',
 ]
 
 MIDDLEWARE = [
@@ -52,7 +54,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'profilewebsite.urls'
-
+#print("\n\n",os.path.join(BASE_DIR, 'templates'),"\n\n")
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
